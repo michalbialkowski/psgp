@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>wco</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body class="bg-light">
+    <div>
+        <main>
+            <div>
+                <div class="container-fluid p-0">
+                    <div class="row no-gutters flex-wrap" style="min-height: 100vh;">
+                        <div class="col-auto d-none d-lg-flex flex-lg-column justify-content-lg-between py-3 bg-dark">
+                            <ul class="nav flex-column">
+                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-grid"></i><span class="pl-3">Start</span></a></li>
+                                <li class="nav-item mt-3"><a class="nav-link active text-white px-4" href="system-rejestracja.html"><i class="icon-user-follow"></i><span class="pl-3">Rejestracja pacjenta</span></a></li>
+                                <li class="nav-item mt-3"><a class="nav-link active text-white px-4" href="system-pacjenci.html"><i class="icon-people"></i><span class="pl-3">Lista pacjentów</span></a></li>
+                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-cloud-download"></i><span class="pl-3">Eksport pacjentów</span></a></li>
+                                <li class="nav-item mt-3"><a class="nav-link active text-white px-4" href="#"><i class="icon-doc"></i><span class="pl-3">Raporty</span></a></li>
+                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-chart"></i><span class="pl-3">Statystyki</span></a></li>
+                                <li class="nav-item mt-3"><a class="nav-link active text-white px-4" href="#"><i class="icon-people"></i><span class="pl-3">Lista użytkowników</span></a></li>
+                                <li class="nav-item"><a class="nav-link active text-white px-4" href="#"><i class="icon-organization"></i><span class="pl-3">Lista jednostek</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <nav class="navbar navbar-light navbar-expand bg-white shadow-sm topbar static-top">
+                                <div class="container-fluid"><button class="btn btn-info btn-sm d-flex align-items-center rounded-pill px-3" type="button"><i class="icon-menu mr-2"></i><span class="text-uppercase">Zwiń menu</span></button>
+                                    <ul class="nav navbar-nav text-right align-items-center flex-nowrap ml-auto">
+                                        <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fas fa-search"></i></a>
+                                            <div class="dropdown-menu dropdown-menu-right p-3 animated--grow-in" aria-labelledby="searchDropdown">
+                                                <form class="form-inline mr-auto navbar-search w-100">
+                                                    <div class="input-group"><input class="bg-light form-control border-0 small" type="text" placeholder="Search for ...">
+                                                        <div class="input-group-append"><button class="btn btn-primary py-0" type="button"><i class="fas fa-search"></i></button></div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown no-arrow mx-1 p-0">
+                                            <div class="nav-item dropdown"><a class="d-flex align-items-center nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="badge badge-danger badge-counter mr-2">3+</span><span class="h5 mb-0"><i class="icon-bell"></i></span></a>
+                                                <div
+                                                    class="dropdown-menu dropdown-menu-right py-0 overflow-hidden rounded rounded-lg">
+                                                    <h6 class="text-uppercase text-white bg-info dropdown-header py--14 font-weight-bold">Centrum powiadomień</h6>
+                                                    <a class="d-flex align-items-center dropdown-item py-2" href="#">
+                                                        <div class="mr-3">
+                                                            <div class="bg-primary ratio width--40 rounded-circle"><span class="text-white h5 mb-0"><i class="icon-doc"></i></span></div>
+                                                        </div>
+                                                        <div><span class="text-black-50 small text-gray-500">December 12, 2019</span>
+                                                            <p class="mb-0">A new monthly report is ready to download!</p>
+                                                        </div>
+                                                    </a>
+                                                    <a class="d-flex align-items-center dropdown-item py-2" href="#">
+                                                        <div class="mr-3">
+                                                            <div class="bg-success ratio width--40 rounded-circle"><span class="text-white h5 mb-0"><i class="icon-wallet"></i></span></div>
+                                                        </div>
+                                                        <div><span class="text-black-50 small text-gray-500">December 7, 2019</span>
+                                                            <p class="mb-0">$290.29 has been deposited into your account</p>
+                                                        </div>
+                                                    </a>
+                                                    <a class="d-flex align-items-center dropdown-item py-2" href="#">
+                                                        <div class="mr-3">
+                                                            <div class="bg-warning ratio width--40 rounded-circle"><span class="text-white h5 mb-0"><i class="icon-exclamation"></i></span></div>
+                                                        </div>
+                                                        <div><span class="text-black-50 small text-gray-500">December 2, 2019</span>
+                                                            <p class="mb-0">Spending Alert: We've noticed unusually high spending for your account.</p>
+                                                        </div>
+                                                    </a><button class="btn btn-light btn-block text-black-50 border-0 rounded-0 py--10" type="button"><small>Pokaż wszystkie powiadomienia</small></button></div>
+                                </div>
+                                </li>
+                                <li class="nav-item dropdown no-arrow mx-1">
+                                    <div class="nav-item dropdown"><a class="d-flex align-items-center nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="h5 mb-0"><i class="icon-envelope"></i></span><span class="badge badge-danger badge-counter ml-2">7</span></a>
+                                        <div
+                                            class="dropdown-menu dropdown-menu-right py-0 rounded rounded-lg overflow-hidden">
+                                            <h6 class="text-uppercase text-white bg-info dropdown-header font-weight-bold py--14">Wiadomości</h6>
+                                            <a class="d-flex align-items-center dropdown-item py-2" href="#">
+                                                <div class="mr-3">
+                                                    <div class="bg-light ratio width--40 rounded-circle overflow-hidden">
+                                                        <div><img src="assets/img/240_F_224306882_EFWAczfd4iA9PP6Z1ZQ0GCLwMVeKMW5Q.jpg"></div>
+                                                    </div>
+                                                </div>
+                                                <div><span class="font-weight-bold">Hi there! I am wondering if you can help me with a problem I've been having.</span>
+                                                    <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                                </div>
+                                            </a>
+                                            <a class="d-flex align-items-center dropdown-item py-2" href="#">
+                                                <div class="mr-3">
+                                                    <div class="bg-light ratio width--40 rounded-circle overflow-hidden">
+                                                        <div><img src="assets/img/240_F_224306882_EFWAczfd4iA9PP6Z1ZQ0GCLwMVeKMW5Q.jpg"></div>
+                                                    </div>
+                                                </div>
+                                                <div><span class="font-weight-bold">I have the photos that you ordered last month!</span>
+                                                    <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                                </div>
+                                            </a>
+                                            <a class="d-flex align-items-center dropdown-item py-2" href="#">
+                                                <div class="mr-3">
+                                                    <div class="bg-light ratio width--40 rounded-circle overflow-hidden">
+                                                        <div><img src="assets/img/240_F_224306882_EFWAczfd4iA9PP6Z1ZQ0GCLwMVeKMW5Q.jpg"></div>
+                                                    </div>
+                                                </div>
+                                                <div><span class="font-weight-bold">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span>
+                                                    <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                                </div>
+                                            </a>
+                                            <a class="d-flex align-items-center dropdown-item py-2" href="#">
+                                                <div class="mr-3">
+                                                    <div class="bg-light ratio width--40 rounded-circle overflow-hidden">
+                                                        <div><img src="assets/img/240_F_224306882_EFWAczfd4iA9PP6Z1ZQ0GCLwMVeKMW5Q.jpg"></div>
+                                                    </div>
+                                                </div>
+                                                <div><span class="font-weight-bold">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span>
+                                                    <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                                </div>
+                                            </a><button class="btn btn-light btn-block text-black-50 border-0 rounded-0 py--10" type="button"><small>Pokaż wszystkie wiadomości</small></button></div>
+                        </div>
+                        <div class="shadow dropdown-list dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown"></div>
+                        </li>
+                        <div class="d-none d-sm-block topbar-divider"></div>
+                        <li class="nav-item dropdown no-arrow">
+                            <div class="nav-item dropdown"><a class="d-flex align-items-center nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600">Anna Nowak</span><span class="ratio width--35 rounded-circle overflow-hidden"><span><img src="assets/img/240_F_224306882_EFWAczfd4iA9PP6Z1ZQ0GCLwMVeKMW5Q.jpg"></span></span></a>
+                                <div
+                                    class="dropdown-menu shadow dropdown-menu-right animated--grow-in"><a class="dropdown-item" href="#"><i class="icon-user fa-sm fa-fw mr-2 text-gray-400"></i>Profil</a><a class="dropdown-item" href="#"><i class="icon-settings fa-sm fa-fw mr-2 text-gray-400"></i>Ustawienia</a>
+                                    <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="icon-logout fa-sm fa-fw mr-2 text-gray-400"></i>Wyloguj się</a></div>
+                    </div>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
+                <div class="py-3">
+                    <div class="px-4">
+                        <h3 class="text-dark mb-4">Rejestracja pacjenta</h3>
+                        <form>
+                            <div class="card mb-4">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Jestem osobą</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-1" required=""><label class="custom-control-label" for="formCheck-1">z nowo rozpoznanymi nowotworami złośliwymi&nbsp;<span class="text-danger">*</span></label></div>
+                                        <div
+                                            class="pl-4 mt-1">
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-38"><label class="custom-control-label" for="formCheck-1">rak płuca (C33-34)</label></div>
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-44"><label class="custom-control-label" for="formCheck-1">rak sutka (C50)</label></div>
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-43"><label class="custom-control-label" for="formCheck-1">rak trzonu macicy (C54)</label></div>
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-42"><label class="custom-control-label" for="formCheck-1">rak szyjki macicy (C53)</label></div>
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-41"><label class="custom-control-label" for="formCheck-1">rak jelita grubego i odbytnicy (C 18-21)</label></div>
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-40"><label class="custom-control-label" for="formCheck-1">rak pęcherza moczowego (C67)</label></div>
+                                            <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-39"><label class="custom-control-label" for="formCheck-1">przewlekła białaczka limfocytowa (C91)</label></div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-2"><label class="custom-control-label" for="formCheck-1">która nie rozpoczęła jeszcze leczenia radykalnego lub paliatywnego immunoterapią/chemioterapią&nbsp;<span class="text-danger">*</span></label></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-3"><label class="custom-control-label" for="formCheck-1">która była szczepiona szczepionką przeciwko pneumokokom&nbsp;<span class="text-danger">*</span></label></div>
+                                    <div
+                                        class="pl-4 mt-1">
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-45"><label class="custom-control-label" for="formCheck-1">tak</label></div>
+                                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-46"><label class="custom-control-label" for="formCheck-1">nie</label></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-4"><label class="custom-control-label" for="formCheck-1">która była szczepiona w danym sezonie epidemicznym szczepionką przeciwko grypie&nbsp;<span class="text-danger">*</span></label></div>
+                                <div
+                                    class="pl-4 mt-1">
+                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-47"><label class="custom-control-label" for="formCheck-1">tak</label></div>
+                                    <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-48"><label class="custom-control-label" for="formCheck-1">nie</label></div>
+                            </div>
+                    </div>
+                    <div class="form-group mb-0">
+                        <div class="custom-control custom-checkbox"><input class="custom-control-input" type="checkbox" id="formCheck-5"><label class="custom-control-label" for="formCheck-1">która nie posiada przeciwwskazań lekarskich wskazanych przez lekarza prowadzącego leczenie onkologiczne do takich szczepień&nbsp;<span class="text-danger">*</span></label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Jednostka</h5>
+                </div>
+                <div class="card-body"><input class="form-control" type="text" value="Poradnia Szczepień Grypa/Pneumokoki, Wielkopolskie Centrum Onkologii, ul. Garbary 15, 61-866 Poznań" disabled="" readonly=""></div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Dane osobowe kandydata/ki do projektu</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-4"><label class="col-form-label">Imię&nbsp;<span class="text-danger">*</span></label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-4"><label class="col-form-label">Nazwisko&nbsp;<span class="text-danger">*</span></label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-4"><label class="col-form-label">PESEL&nbsp;<span class="text-danger">*</span></label></div>
+                            <div class="col"><input class="form-control" type="text">
+                                <div class="mt-1">
+                                    <div class="custom-control custom-checkbox mt-1"><input class="custom-control-input" type="checkbox" id="formCheck-6"><label class="custom-control-label" for="formCheck-6">Brak PESEL</label></div><small class="mt-1">Rodzaj, seria i nr dokumentu potwierdzającego tożsamość</small>
+                                    <input
+                                        class="form-control mt-1" type="text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-4"><label class="col-form-label">Płeć&nbsp;<span class="text-danger">*</span></label></div>
+                            <div class="col">
+                                <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-7"><label class="custom-control-label" for="formCheck-7">kobieta</label></div>
+                                <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-8"><label class="custom-control-label" for="formCheck-7">mężczyzna</label></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-4"><label class="col-form-label">Data urodzenia&nbsp;<span class="text-danger">*</span></label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-4"><label class="col-form-label">Miejsce urodzenia&nbsp;<span class="text-danger">*</span></label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col-md-4"><label class="col-form-label">Wiek w chwili przystąpienia do projektu&nbsp;<span class="text-danger">*</span></label></div>
+                            <div class="col"><input class="form-control" type="text"></div>
+                        </div>
+                    </div>
+                    <div class="form-group mb-0">
+                        <div class="form-row">
+                            <div class="col-md-4"><label class="col-form-label">Wykształcenie&nbsp;<span class="text-danger">*</span></label></div>
+                            <div class="col">
+                                <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-9"><label class="custom-control-label" for="formCheck-7">niższe niż podstawowe (ISCED 0)</label></div>
+                                <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-10"><label class="custom-control-label" for="formCheck-7">podstawowe (ISCED 1)</label></div>
+                                <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-11"><label class="custom-control-label" for="formCheck-7">gimnazjalne (ISCED 2)</label></div>
+                                <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-12"><label class="custom-control-label" for="formCheck-7">ponadgimnazjalne – ukończone na poziomie szkoły średniej – liceum, technikum, szkoła zawodowa<br>(ISCED 3)</label></div>
+                                <div
+                                    class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-13"><label class="custom-control-label" for="formCheck-7">policealne – ukończone na poziomie wyższym niż na poziomie szkoły średniej, które jednocześnie&nbsp;nie jest wykształceniem wyższym (ISCED 4)</label></div>
+                            <div
+                                class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-14"><label class="custom-control-label" for="formCheck-7">wyższe (ISCED 5-8)</label></div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5 class="mb-0">Dane kontaktowe kandydata/ki do projektu</h5>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Kraj</label></div>
+                    <div class="col"><input class="form-control" type="text" value="Polska" disabled="" readonly=""></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Województwo</label></div>
+                    <div class="col"><input class="form-control" type="text" value="Wielkopolskie" disabled="" readonly=""></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Powiat&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Gmina&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Miejscowość&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Ulica&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Numer budynku&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Numer lokalu&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Kod pocztowy&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Telefon kontaktowy&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text"></div>
+                </div>
+            </div>
+            <div class="form-group mb-0">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Adres e-mail&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><input class="form-control" type="text">
+                        <div class="custom-control custom-checkbox mt-2"><input class="custom-control-input" type="checkbox" id="formCheck-15"><label class="custom-control-label" for="formCheck-6">Brak adresu e-mail</label></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <h5 class="mb-0">Status osoby na rynku pracy w chwili przystępowania do projektu</h5>
+        </div>
+        <div class="card-body">
+            <div class="alert alert-info" role="alert"><span>Jeśli jesteś emerytem oraz jesteś gotowy do podjęcia pracy i aktywnie poszukujesz zatrudnienia zaznacz pozycję: „osoba bezrobotna niezarejestrowana w ewidencji urzędów pracy”</span></div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Osoba pracująca&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col">
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-16"><label class="custom-control-label" for="formCheck-7">tak</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-17"><label class="custom-control-label" for="formCheck-7">nie</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Proszę podać swój status na rynku pracy&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col">
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-70"><label class="custom-control-label" for="formCheck-7">jestem osobą pracującą w administracji rządowej</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-71"><label class="custom-control-label" for="formCheck-7">jestem osobą pracującą w administracji samorządowej</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-72"><label class="custom-control-label" for="formCheck-7">jestem osobą pracującą w dużym przedsiębiorstwie</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-23"><label class="custom-control-label" for="formCheck-7">jestem osobą pracującą w mikro, małym lub średnim przedsiębiorstwie</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-22"><label class="custom-control-label" for="formCheck-7">jestem osobą pracującą w organizacji pozarządowej</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-21"><label class="custom-control-label" for="formCheck-7">jestem osobą prowadzącą działalność na własny rachunek</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-20"><label class="custom-control-label" for="formCheck-7">inna odpowiedź</label></div>
+                        <div class="pl-4 mt-1"><textarea class="form-control mt-1"></textarea></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Proszę podać wykonywany zawód&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col">
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-25"><label class="custom-control-label" for="formCheck-7">instruktor praktycznej nauki zawodu</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-26"><label class="custom-control-label" for="formCheck-7">kluczowy pracownik instytucji pomocy i integracji społecznej</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-27"><label class="custom-control-label" for="formCheck-7">nauczyciel kształcenia ogólnego</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-28"><label class="custom-control-label" for="formCheck-7">nauczyciel kształcenia zawodowego</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-29"><label class="custom-control-label" for="formCheck-7">nauczyciel wychowania przedszkolnego</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-30"><label class="custom-control-label" for="formCheck-7">pracownik instytucji rynku pracy</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-37"><label class="custom-control-label" for="formCheck-7">pracownik instytucji systemu ochrony zdrowia</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-36"><label class="custom-control-label" for="formCheck-7">pracownik instytucji systemu wspierania rodziny i pieczy zastępczej</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-35"><label class="custom-control-label" for="formCheck-7">pracownik instytucji szkolnictwa wyższego</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-34"><label class="custom-control-label" for="formCheck-7">pracownik ośrodka wsparcia ekonomii społecznej</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-33"><label class="custom-control-label" for="formCheck-7">pracownik poradni psychologiczno-pedagogicznej</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-32"><label class="custom-control-label" for="formCheck-7">rolnik</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-31"><label class="custom-control-label" for="formCheck-7">inny, jaki</label></div>
+                        <div class="pl-4 mt-1"><textarea class="form-control mt-1"></textarea></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Zatrudniony w&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col"><textarea class="form-control"></textarea></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Proszę podać swój status na rynku pracy&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col">
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-73"><label class="custom-control-label" for="formCheck-7">osoba bezrobotna niezarejestrowana w ewidencji urzędów pracy</label></div>
+                        <div class="pl-4 mt-1">
+                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-56"><label class="custom-control-label" for="formCheck-7">osoba długotrwale bezrobotna</label></div>
+                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-49"><label class="custom-control-label" for="formCheck-7">inne</label></div>
+                        </div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-74"><label class="custom-control-label" for="formCheck-7">osoba bezrobotna zarejestrowana w ewidencji urzędów pracy</label></div>
+                        <div class="pl-4 mt-1">
+                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-50"><label class="custom-control-label" for="formCheck-7">osoba długotrwale bezrobotna</label></div>
+                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-51"><label class="custom-control-label" for="formCheck-7">inne</label></div>
+                        </div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-75"><label class="custom-control-label" for="formCheck-7">osoba bierna zawodowo</label></div>
+                        <div class="pl-4 mt-1">
+                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-52"><label class="custom-control-label" for="formCheck-7">osoba ucząca się</label></div>
+                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-54"><label class="custom-control-label" for="formCheck-7">osoba nieuczestnicząca w kształceniu lub szkoleniu</label></div>
+                            <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-53"><label class="custom-control-label" for="formCheck-7">inne</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Czy jest Pan/i osobą należącą mniejszości narodowej lub etnicznej, migrantem lub osobą obcego pochodzenia?&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col">
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-55"><label class="custom-control-label" for="formCheck-7">tak</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-57"><label class="custom-control-label" for="formCheck-7">nie</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-58"><label class="custom-control-label" for="formCheck-7">odmowa podania informacji</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Czy jest Pan/i osobą bezdomną lub dotkniętą wykluczeniem z dostępu do mieszkań?&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col">
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-62"><label class="custom-control-label" for="formCheck-7">tak</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-63"><label class="custom-control-label" for="formCheck-7">nie</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-64"><label class="custom-control-label" for="formCheck-7">odmowa podania informacji</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Czy jest Pan/i osobą z niepełnosprawnościami?&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col">
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-59"><label class="custom-control-label" for="formCheck-7">tak</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-60"><label class="custom-control-label" for="formCheck-7">nie</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-61"><label class="custom-control-label" for="formCheck-7">odmowa podania informacji</label></div>
+                        <div class="pl-4 mt-1"><small class="d-block">W przypadku osób z niepełnosprawnościami prosimy o poinformowanie nas o swoich potrzebach, umożliwi to przygotowanie odpowiedniej pomocy oraz sprawną obsługę</small><textarea class="form-control mt-1"></textarea></div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group mb-0">
+                <div class="form-row">
+                    <div class="col-md-4"><label class="col-form-label">Czy jest Pan/i osobą w innej niekorzystnej sytuacji społecznej (innej niż wymienione powyżej)?&nbsp;<span class="text-danger">*</span></label></div>
+                    <div class="col">
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-65"><label class="custom-control-label" for="formCheck-7">tak</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-66"><label class="custom-control-label" for="formCheck-7">nie</label></div>
+                        <div class="custom-control custom-radio"><input class="custom-control-input" type="radio" id="formCheck-67"><label class="custom-control-label" for="formCheck-7">odmowa podania informacji</label></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="custom-control custom-checkbox mt-2"><input class="custom-control-input" type="checkbox" id="formCheck-68"><label class="custom-control-label" for="formCheck-6">Oświadczam, że zapoznałem/-am się z Klauzulą Obowiązku Informacyjnego (odnośnik do Klauzuli), w tym z informacją o celu i sposobach przetwarzania danych osobowych oraz prawie dostępu do treści swoich danych i prawie ich poprawiania&nbsp;<span class="text-danger">*</span></label></div>
+        <div
+            class="custom-control custom-checkbox mt-2"><input class="custom-control-input" type="checkbox" id="formCheck-69"><label class="custom-control-label" for="formCheck-6">Oświadczam, że zapoznałem/-am się i akceptuję Regulamin Projektu&nbsp;&nbsp;<span class="text-danger">*</span></label></div>
+    </div>
+    <div class="form-group"><button class="btn btn-primary" type="button">Wyślij</button></div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
